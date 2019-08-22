@@ -1,0 +1,163 @@
+body
+  font-family: 'Helvetica', sans-serif
+  font-weight: 200
+  margin: 0
+  padding: 0
+
+.header
+  align-items: center
+  background: #8a8a8a
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100vh
+
+h1
+  font-size: 18px
+  font-weight: 200
+  text-transform: uppercase
+  
+button
+  background: #777
+  box-sizing: border-box
+  border: 0
+  border-radius: 0
+  color: #FFF
+  font-family: 'Helvetica', sans-serif
+  font-size: 21px
+  font-width: 300
+  min-height: 47px
+  outline: none
+  &:hover
+    background: #888
+  &:active
+    background: #AAA
+
+button:nth-child(-n+4)
+  background: #666
+  &:hover
+    background: #777
+  &:active
+    background: #999
+
+button:nth-child(4n+1)
+  background: #FF9900
+  &:hover
+    background: #EE8800
+  &:active
+    background: #DD7700
+
+button:nth-child(18)
+  border-bottom-left-radius: 5px
+
+button:last-child
+  border-bottom-right-radius: 5px
+  background: #FF9900
+  &:hover
+    background: #EE8800
+  &:active
+    background: #DD7700
+
+.screen
+  align-items: flex-end
+  background: #444
+  border: 0
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  color: #FFF
+  cursor: default
+  display: flex
+  text-align: right
+  font-size: 46px
+  font-weight: 200
+  grid-area: screen
+  justify-content: flex-end
+  overflow: hidden
+  outline: none
+  padding: 5px
+  &::placeholder
+    color: #FFF
+
+.app-buttons
+  display: flex
+  margin: 6px 3px
+  position: absolute
+
+.app-button
+  background: #666
+  border-radius: 45px
+  height: 12px
+  margin: 0px 3px
+  width: 12px
+  &.red
+    background: #FB3E3E
+  &.green
+    background: #2AC833
+  &.yellow
+    background: #FDB525
+
+.value
+  margin: 20px 5px 0
+
+.frame
+  background: #333
+  border: 1px solid #111
+  border-radius: 5px
+  display: grid
+  grid-gap: 1px
+  grid-template-columns: 58px 58px 58px 58px
+  grid-template-rows: 80px 47px 47px 47px 47px 48px
+  grid-template-areas: "screen screen screen screen" "clear negative percentage divide" "seven eight nine multiply" "four five six subtract" "one two three plus" "zero zero decimal equals"
+
+.clear
+  grid-area: clear
+
+.divide
+  grid-area: divide
+
+.seven
+  grid-area: seven
+
+.eight
+  grid-area: eight
+
+.nine
+  grid-area: nine
+
+.multiply
+  grid-area: multiply
+
+.four
+  grid-area: four
+
+.five
+  grid-area: five
+
+.six
+  grid-area: six
+
+.subtract
+  grid-area: subtract
+
+.one
+  grid-area: one
+
+.two
+  grid-area: two
+
+.three
+  grid-area: three
+
+.plus
+  grid-area: plus
+
+.zero
+  grid-area: zero
+  padding-left: 25px
+  text-align: left
+
+.decimal
+  grid-area: decimal
+
+.equals
+  grid-area: equals
